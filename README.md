@@ -1,7 +1,7 @@
 # BFF Instore
 
 ## What's it?
-This's a BFF oriject.
+This's a BFF project.
 
 ## Requirements:
 1. `docker`
