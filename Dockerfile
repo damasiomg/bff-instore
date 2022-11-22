@@ -1,4 +1,4 @@
-FROM node:18 as development
+FROM node:18-alpine as development
 WORKDIR /app
 COPY package.json yarn.lock /app/
 RUN yarn --only=development
