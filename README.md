@@ -7,9 +7,6 @@ Criar um projeto dockerizado utilizando o framework NestJS que reproduza uma API
 1. [Docker](https://docs.docker.com/get-started)
 2. [NestJS](https://docs.nestjs.com)
 3. [TypeScript](https://www.typescriptlang.org/docs)
-4. [JWT](https://jwt.io)
-
-
 
 ## Rotas:
 
