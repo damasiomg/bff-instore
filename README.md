@@ -45,3 +45,8 @@ curl --location --request GET 'localhost:3001/api/user' \
 --header 'Cookie: jwt=eyJhbGczI.eyJpZCI6MTEsNywiZXhwIjoxNjcwNTE3Njg3fQ.pacBNpXGc1-XzHIK2-xdY0qqo'
 ```
 
+## Recomendações:
+
+1. Procure trabalhar com containers de responsabilidades isoladas usando o driver bridge para comunicação.
+2. Ao terminar 
+
