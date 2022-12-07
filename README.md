@@ -34,6 +34,7 @@ curl --location --request GET 'http://localhost:3001/api/users'
 ```
 curl --location --request POST 'http://localhost:3001/api/login' \
 --header 'Content-Type: application/json' \
+--header 'Cookie: jwt=eyJhbGczI.eyJpZCI6MTEsNywiZXhwIjoxNjcwNTE3Njg3fQ.pacBNpXGc1-XzHIK2-xdY0qqo' \
 --data-raw '{
     "email": "john@domain.com",
     "password": "123"
