@@ -1,13 +1,47 @@
-# BFF Instore
+# Prova Backend OMS
 
-## What's it?
-This's a BFF project.
+## O é para fazer?
+Criar um projeto dockerizado utilizando o framework NestJS que reproduza uma API de autenticação simples.
 
-## Requirements:
-1. `docker`
+## Requisitos:
+1. [Docker](https://docs.docker.com/get-started)
+2. [NestJS](https://docs.nestjs.com)
+3. [JWT](https://jwt.io)
 
 
-## Running the project (locally):
+## Rotas:
 
-1. `cd bff-instore`
-2. `yarn dev`
+1. `api/register - registrar usuários em um serviço de banco de dados`
+```
+curl --location --request POST 'http://localhost:3001/api/register' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john@domain.com",
+    "password": "123",
+    "password_confirm": "123"
+}'
+```
+2. `api/users - listar todos os usuários da aplicação`
+```
+curl --location --request GET 'http://localhost:3001/api/users'
+```
+
+3. `api/login - fazer autenticação de usuário previamente cadastrado`
+```
+curl --location --request POST 'http://localhost:3001/api/login' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: jwt=eyJhbGczI.eyJpZCI6MTEsNywiZXhwIjoxNjcwNTE3Njg3fQ.pacBNpXGc1-XzHIK2-xdY0qqo' \
+--data-raw '{
+    "email": "john@domain.com",
+    "password": "123"
+}'
+```
+
+4. `api/user - retornar dados do usuário logado`
+```
+curl --location --request GET 'localhost:3001/api/user' \
+--header 'Cookie: jwt=eyJhbGczI.eyJpZCI6MTEsNywiZXhwIjoxNjcwNTE3Njg3fQ.pacBNpXGc1-XzHIK2-xdY0qqo'
+```
+
