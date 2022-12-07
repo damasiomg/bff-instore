@@ -1,4 +1,4 @@
-# Avaliação assíncrona - Backend OMS
+# Avaliação assíncrona Back-end OMS
 
 ## O é para fazer?
 Criar um projeto dockerizado utilizando o framework NestJS que reproduza uma API de autenticação simples para usuários fictícios.
